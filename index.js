@@ -11,6 +11,7 @@ async function getData() {
     labels.push(data[i].day);
     values.push(data[i].amount);
   }
+
   new Chart(document.getElementById("myCanvas"), {
     type: "bar",
 
@@ -22,7 +23,7 @@ async function getData() {
           backgroundColor: [
             "hsl(10, 79%, 65%)",
             "hsl(10, 79%, 65%)",
-            "hsl(10, 79%, 65%)",
+            "hsl(186, 34%, 60%)",
             "hsl(10, 79%, 65%)",
             "hsl(10, 79%, 65%)",
             "hsl(10, 79%, 65%)",
@@ -31,13 +32,13 @@ async function getData() {
 
           data: values,
           hoverBackgroundColor: [
+            "hsl(10, 79%, 65%, 0.8)",
+            "hsl(10, 79%, 65%, 0.8)",
             "hsla(186, 34%, 60%,0.8)",
-            "hsla(186, 34%, 60%,0.8)",
-            "hsla(186, 34%, 60%,0.8)",
-            "hsla(186, 34%, 60%,0.8)",
-            "hsla(186, 34%, 60%,0.8)",
-            "hsla(186, 34%, 60%,0.8)",
-            "hsla(186, 34%, 60%,0.8)",
+            "hsl(10, 79%, 65%, 0.8)",
+            "hsl(10, 79%, 65%, 0.8)",
+            "hsl(10, 79%, 65%, 0.8)",
+            "hsl(10, 79%, 65%, 0.8)",
           ],
         },
       ],
