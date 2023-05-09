@@ -1,0 +1,95 @@
+:root {
+  --clr-primary-Soft-red: hsl(10, 79%, 65%);
+  --clr-primary-Cyan: hsl(186, 34%, 60%);
+  --clr-Dark-brown: hsl(25, 47%, 15%);
+  --clr-Medium-brown: hsl(28, 10%, 53%);
+  --clr-Cream: hsl(27, 66%, 92%);
+  --clr-Very-pale-orange: hsl(33, 100%, 98%);
+  --transition: all 0.5s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  background: var(--clr-Cream);
+}
+.app-container {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  padding: 2rem;
+}
+
+card {
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: minmax(350px, 1fr);
+  grid-template-rows: 5px 1fr 1fr;
+  grid-row-gap: 1rem;
+  margin: 0 auto;
+}
+.balance {
+  background: var(--clr-primary-Soft-red);
+  color: white;
+  padding: 1rem 1rem 0 1rem;
+  max-width: 80vw;
+}
+.balance-title {
+  font-weight: 400;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.available-amount,
+.amount-spent,
+.evolution {
+  font-weight: bolder;
+}
+.amount-spent,
+.evolution {
+  color: var(--clr-Dark-brown);
+}
+.amount-spent {
+  font-size: 26px;
+}
+.spending {
+  display: grid;
+  grid-template-rows: 1fr 200px 50px 10px;
+  align-content: center;
+  align-items: center;
+  background: var(--clr-Very-pale-orange);
+  color: var(--clr-Dark-brown);
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.card-title {
+  font-weight: bolder;
+  text-align: center;
+}
+
+canvas {
+  border: 1px solid rgb(195, 195, 195);
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+}
+
+canvas:hover {
+  cursor: pointer;
+}
+
+.total-spent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.total-spent,
+.timeframe {
+  color: var(--clr-Medium-brown);
+  font-size: 14px;
+}
