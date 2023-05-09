@@ -23,6 +23,7 @@ body {
   display: grid;
   grid-template-columns: minmax(300px, 1fr);
   padding: 2rem;
+  margin-top: 4rem;
 }
 
 card {
